@@ -4,8 +4,20 @@ import createProductList from "./productsList.js";
 const filterBrand = () => {
     const valueSelect = document.getElementById('brand');
     var brand = '';
+    //função para mudar a lista de produtos conforme seleçao
     valueSelect.onchange = function(){
         brand = this.value;
+        console.log(brand)
+        if(brand == 'Todas'){
+            Service.request()
+            .then((response) => {
+                createProductList(response); 
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            });
+        }
 
         //esvaziando o elemento antes de criar uma nova 'li'
         const element = document.querySelector('.product_list');
