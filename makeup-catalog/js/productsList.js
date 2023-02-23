@@ -1,4 +1,4 @@
-import {Service} from './service.js'; 
+import {Service} from './service/service.js'; 
 
 const createProductList = (response) =>{
     //capturando os objetos obtidos

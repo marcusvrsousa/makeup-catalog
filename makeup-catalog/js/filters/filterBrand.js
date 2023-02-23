@@ -1,5 +1,5 @@
-import { Service } from "./service.js";
-import createProductList from "./productsList.js";
+import { Service } from "../service/service.js";
+import createProductList from "../productsList.js";
 
 const filterBrand = () => {
     const valueSelect = document.getElementById('brand');
@@ -19,7 +19,7 @@ const filterBrand = () => {
             });
         }
 
-        //esvaziando o elemento antes de criar uma nova 'li'
+        //esvaziando o elemento antes de criar uma 'li' com os novos produtos
         const element = document.querySelector('.product_list');
         element.innerHTML = '';
 
@@ -33,5 +33,4 @@ const filterBrand = () => {
 }
 
 filterBrand();
-
 

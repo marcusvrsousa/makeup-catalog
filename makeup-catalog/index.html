@@ -24,18 +24,14 @@
             <select id="brand">
                 <option selected disabled>Selecione a marca</option>
                 <option>Todas</option>
-                <option>Colourpop</option>
-                <option>Boosh</option>
-                <option>Glossier</option>
             </select>
         </section>
 
         <section>
             <label for="type">Tipo:</label>
             <select id="type">
-                <option value>São Paulo</option>
-                <option>Santa Catarina</option>
-                <option>Rio Grande do Sul</option>
+                <option selected disabled>Selecione o tipo</option>
+                <option>Todas</option>
             </select>
         </section>
 
@@ -66,7 +62,9 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./js/service.js"></script>
     <script type="module" src="./js/productsList.js"></script>
-    <script type="module" src="./js/filters.js"></script>
+    <script type="module" src="../makeup-catalog/js/filters/filterBrand.js"></script>
+    <script type="module" src="../makeup-catalog/js/filters/filterType.js"></script>
     <script type="module" src="./js/brandList.js"></script>
+    <script type="module" src="./js/productTypeList.js"></script>
 </body>
 </html>
