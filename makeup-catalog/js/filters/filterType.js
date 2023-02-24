@@ -8,7 +8,6 @@ const filterProductType = () => {
      //função para mudar a lista de produtos conforme seleçao
      valueSelect.onchange = function(){
         type = this.value;
-        console.log(brand)
         if(type == 'Todas'){
             Service.request()
             .then((response) => {
