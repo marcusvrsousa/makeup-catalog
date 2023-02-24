@@ -7,7 +7,6 @@ const filterBrand = () => {
     //função para mudar a lista de produtos conforme seleçao
     valueSelect.onchange = function(){
         brand = this.value;
-        console.log(brand)
         if(brand == 'Todas'){
             Service.request()
             .then((response) => {

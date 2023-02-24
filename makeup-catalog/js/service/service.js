@@ -16,12 +16,17 @@ const filterPriceGreaterThan = () =>{
     return axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json?price_greater_than=25`)
 }
 
+const filterPriceLessThan = () =>{
+    return axios.get(`http://makeup-api.herokuapp.com/api/v1/products.json?price_less_than=25`)
+}
+
 
 export const Service = { 
     request,
     filterBrand,
     filterType,
-    filterPriceGreaterThan
+    filterPriceGreaterThan,
+    filterPriceLessThan
 }
 
 

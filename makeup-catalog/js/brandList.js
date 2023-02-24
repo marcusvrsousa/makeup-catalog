@@ -4,7 +4,6 @@ function requestBrand(){
     Service.request()
     .then((response) => {
         buildSelectOptionBrand(response); 
-        console.log(response)
     })
     .catch(function (error) {
         // handle error

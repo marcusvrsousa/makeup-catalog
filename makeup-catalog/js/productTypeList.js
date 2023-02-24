@@ -4,7 +4,6 @@ function requestProductType(){
     Service.request()
     .then((response) =>{
         buildSelectOptionType(response); 
-        console.log(response)
     })
     .catch(function (error) {
         // handle error
