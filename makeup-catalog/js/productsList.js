@@ -1,7 +1,7 @@
 import {Service} from './service/service.js'; 
 
 const createProductList = (response) =>{
-    //capturando os objetos obtidos
+    //capturando os objetos obtidos pela resposta
     const products = response.data;
 
     //Para cada produto encontrado cria-se uma lista com imagem, nome, marca e preço
@@ -43,6 +43,7 @@ Service.request()
         // always executed
     });
 };
+
 
 productsList();
 
